@@ -10,7 +10,7 @@ let margin = {
   width = 500 - margin.left - margin.right,
   height = 500 - margin.top - margin.bottom;
 
-let svg = d3.select('#vis1')
+let svg = d3.select('#vis')
   .append('svg')
   .attr('preserveAspectRatio', 'xMidYMid meet') // this will scale your visualization according to the size of its parent element and the page.
   .attr('width', '100%') // this is now required by Chrome to ensure the SVG shows up at all
