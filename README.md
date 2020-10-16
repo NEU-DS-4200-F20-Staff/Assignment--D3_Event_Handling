@@ -114,7 +114,7 @@ To get a 1-point bonus on your grade, additionally implement the following funct
 
     **Using the pre-existing [`dblclick` DOM event](https://developer.mozilla.org/en-US/docs/Web/API/Element/dblclick_event) is not allowed in this submission.**
 
-1. Create an event listener on the **square** that is triggered on a `changeColor2` event and changes the **circle's** color to **green**.
+1. Create an event listener on the **square** that is triggered on a `changeColor2` event and changes the **square's** color to **green**.
 
 
 Points will not be deducted for failing this bonus step, but make sure that the code in your GitHub repository works properly for the first step from the time of the deadline onwards.
