@@ -33,6 +33,36 @@ Please look through **all** the materials below so you understand the setup inst
 
 1. In `index.html` update the GitHub repo URL with the URL of your repository. It is in the span with `id='forkongithub'`.
 
+## Organization
+
+Here is an overview of the files and folders we provide for you in your repo.
+
+### Root Files
+* `README.md` is this explanatory file for the repo.
+
+* `index.html` contains the main website content.
+
+* `style.css` contains the CSS.
+
+* `LICENCE` is the source code license for the template. You can add your name or leave it as is.
+
+### Folders
+Each folder has an explanatory `README.md` file.
+
+* `favicons` contains the favicons for the web page. You shouldn't change anything here.
+
+* `.github` contains [GitHub Actions](https://github.com/features/actions) ([docs](https://docs.github.com/en/actions)) which will automatically validate your HTML, CSS, and hyperlinks when you push (see the [**validation last step** below](#validated)). **Do not edit files here** except to create new `.yml` files for any additional actions you choose to add (you are not required to make any).
+
+* `img` contains a descriptive image for the `README.md`.
+
+* `js` will contain all JavaScript files you write. E.g.,
+
+  * `main.js` is the js code that you will have to fill in.
+
+
+* `lib` will contain any JavaScript library you use. It currently includes D3. To ensure long-term survivability, **use the included D3 here rather than linking to [d3js.org](https://d3js.org) or some other CDN.** Likewise, put your other libraries here rather than loading them from elsewhere.
+
+
 ## Implement Custom Click Event
 
 `js/main.js` creates an svg inside the `div` with id `#vis1` and draws a square and a circle for you.
@@ -52,13 +82,20 @@ As you work, make your edits and commit major versions to your git repository.
 
 1. Create an event listener on the **circle** that is triggered on a `changeColor` event and changes the **circle's** color to **red**.
 
-Do not simply have a listener on the **square** that changes the color directly, e.g., *`selection`*`.on('click', function(d, i){ // code that changes the color });`
-**You must use `d3-dispatch` to send and listen for a custom `changeColor` event.**
+    Do not simply have a listener on the **square** that changes the color directly, e.g., *`selection`*`.on('click', function(d, i){ // code that changes the color });`
+    **You must use `d3-dispatch` to send and listen for a custom `changeColor` event.**
 
-We are aware that the same objective can be obtained by using standard predefined DOM events.
-However, learning how to use `d3-dispatch` correctly will be especially useful to you in the upcoming brushing and linking assignment.
-In that assignment you will create multiple modular yet linked visualizations and you will want your code to be more loosely coupled and easier to manage.
-The brushing and linking assignment will be impossible to do without first understanding `d3-dispatch`.
+    We are aware that the same objective can be obtained by using standard predefined DOM events.
+    However, learning how to use `d3-dispatch` correctly will be especially useful to you in the upcoming brushing and linking assignment.
+    In that assignment you will create multiple modular yet linked visualizations and you will want your code to be more loosely coupled and easier to manage.
+    The brushing and linking assignment will be impossible to do without first understanding `d3-dispatch`.
+
+1. <a name='validated'></a> Ensure your code passes the 'Validate HTML, CSS, and Links' checks we run when you push to GitHub. I.e., you want to see a green check next to your commit
+  (<svg width='16' height='16' role='img'><path stroke='#22863a' d='M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z'></path></svg>)
+  and not a red X
+  (<svg width='16' height='16' role='img'><path stroke='#cb2431' d='M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z'></path></svg>).
+You can also see the results in the Actions tab of your repo:
+![GitHub Actions tab](img/gh-actions.png)
 
 ## Bonus: Implement Custom Double-Click Event
 
