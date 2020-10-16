@@ -1,4 +1,4 @@
-# Assignment — D3 Event Handling
+# Assignment — D3 Event Handling
 
 This repository is your starting point for the assignment and includes the instructions below.
 
