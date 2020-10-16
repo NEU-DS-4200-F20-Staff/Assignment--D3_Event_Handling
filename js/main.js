@@ -14,23 +14,23 @@ let svg = d3.select('#vis1')
   .append('svg')
   .attr('preserveAspectRatio', 'xMidYMid meet') // this will scale your visualization according to the size of its parent element and the page.
   .attr('width', '100%') // this is now required by Chrome to ensure the SVG shows up at all
-  .style('background-color', '#ccc')
+  .style('background-color', '#ccc') // change the background color to light gray
   .attr('viewBox', [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
 
 
-text = svg.append('text')
+let squareLabel = svg.append('text')
   .attr('x', '30%')
   .attr('y', '35%')
   .attr('text-anchor', 'middle')
   .text('A')
 
-text = svg.append('text')
+let circleLabel = svg.append('text')
   .attr('x', '70%')
   .attr('y', '35%')
   .attr('text-anchor', 'middle')
   .text('B')
 
-rect = svg.append('rect')// The square we want to click on
+let rect = svg.append('rect')// The square we want to click on
   .attr('x', '20%')
   .attr('y', '40%')
   .attr('width', '20%')
@@ -38,7 +38,7 @@ rect = svg.append('rect')// The square we want to click on
   .attr('fill', 'yellow')
 	.on("click", function(){dispatch.call('changeColor', this);})
 
-circle = svg.append('circle') // The circle we want to change color when the square is clicked
+let circle = svg.append('circle') // The circle we want to change color when the square is clicked
   .attr('cx', '70%')
   .attr('cy', '50%')
   .attr('r', '10%')

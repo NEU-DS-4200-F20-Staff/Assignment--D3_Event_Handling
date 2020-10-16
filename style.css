@@ -53,7 +53,7 @@ h1, h2, h3 {
 circle.selected {
   fill: pink;
   stroke: red;
-  opacity: 5;
+  opacity: .5;
 }
 
 /* Style for selected marks (table rows) */
