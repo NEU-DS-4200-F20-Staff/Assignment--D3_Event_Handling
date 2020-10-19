@@ -7,7 +7,8 @@ Link to your GitHub pages website: `[insert your *clickable* hyperlink here]`
 # Aim of the assignment
 
 Using events is critical for implementing interactive visualizations using D3.
-In this assignment you will learn how to handle and create new events with D3. 
+In this assignment you will learn how to handle and create new events with `d3-dispatch`. 
+(This is particularly important for the upcoming brushing & linking assignment.)
 You will not have to create any new chart, you will just demonstrate your understanding of how events work.
 
 # Instructions
@@ -80,7 +81,7 @@ As you work, make your edits and commit major versions to your git repository.
     There are pre-existing DOM events for [`click`](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) and [`mousedown`](https://developer.mozilla.org/en-US/docs/Web/API/Element/mousedown_event) which are part of the [standard DOM events](https://developer.mozilla.org/en-US/docs/Web/Events#Standard_events).
     You may listen for a `click` or `mousedown` event and use it to then dispatch the `changeColor` event using `d3-dispatch`.
 
-1. Create an event listener on the **circle** that is triggered on a `changeColor` event and changes the **circle's** color to **red**.
+1. Create an event listener using `d3-dispatch` that is triggered on a `changeColor` event and changes the **circle's** color to **red**.
 
     Do not simply have a listener on the **square** that changes the color directly, e.g., *`selection`*`.on('click', function(d, i){ // code that changes the color });`
     **You must use `d3-dispatch` to send and listen for a custom `changeColor` event.**
@@ -114,7 +115,7 @@ To get a 1-point bonus on your grade, additionally implement the following funct
 
     **Using the pre-existing [`dblclick` DOM event](https://developer.mozilla.org/en-US/docs/Web/API/Element/dblclick_event) is not allowed in this submission.**
 
-1. Create an event listener on the **square** that is triggered on a `changeColor2` event and changes the **square's** color to **green**.
+1. Create an event listener using `d3-dispatch` that is triggered on a `changeColor2` event and changes the **square's** color to **green**.
 
 
 Points will not be deducted for failing this bonus step, but make sure that the code in your GitHub repository works properly for the first step from the time of the deadline onwards.
@@ -140,6 +141,8 @@ You are welcome to ask fellow classmates and students for help and discuss the a
 # Tips and Tricks
 
 See https://github.com/NEU-DS-4200-F20-Staff/D3_Tips_and_Tricks.
+
+There are [a ton of built-in browser DOM events](https://developer.mozilla.org/en-US/docs/Web/Events) that you can leverage in general!
 
 # Assignment setup (for instructors only)
 
