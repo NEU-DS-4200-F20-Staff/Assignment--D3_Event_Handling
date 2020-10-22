@@ -63,7 +63,6 @@ Each folder has an explanatory `README.md` file.
 
 * `lib` will contain any JavaScript library you use. It currently includes D3. To ensure long-term survivability, **use the included D3 here rather than linking to [d3js.org](https://d3js.org) or some other CDN.** Likewise, put your other libraries here rather than loading them from elsewhere.
 
-
 ## Implement Custom Click Event
 
 `js/main.js` creates an svg inside the `div` with id `#vis1` and draws a square and a circle for you.
@@ -138,12 +137,12 @@ You are welcome to ask fellow classmates and students for help and discuss the a
 
 1. Submit the URL of **your GitHub Classroom-generated repository** (not your GitHub Page) to [the associated assignment on Canvas](https://northeastern.instructure.com/courses/18721/assignments/573832). **Do not submit a link to a personal repository. It must be within our class GitHub organization.**
 
-# Tips and Tricks
+# Tips, tricks, and troubleshooting
 
-See https://github.com/NEU-DS-4200-F20-Staff/D3_Tips_and_Tricks.
+See https://github.com/NEU-DS-4200-F20-Staff/General_Course_Information/blob/master/d3.md
 
 There are [a ton of built-in browser DOM events](https://developer.mozilla.org/en-US/docs/Web/Events) that you can leverage in general!
 
 # Assignment setup (for instructors only)
 
-See https://github.com/NEU-DS-4200-F20-Staff/Assignment_Setup_Instructions.
+See https://github.com/NEU-DS-4200-F20-Staff/General_Course_Information/blob/master/assignment-setup.md
